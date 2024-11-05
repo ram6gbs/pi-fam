@@ -1,0 +1,85 @@
+/* Reset básico para garantir que os estilos sejam consistentes */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Estilo do corpo da página */
+body {
+  font-family: 'Arial', sans-serif;
+  background-color: #f8f9fa;
+  color: #343a40;
+}
+
+/* Container principal */
+.container {
+  max-width: 600px;
+  margin: 20px auto;
+  padding: 20px;
+  background-color: #ffffff;
+  border-radius: 8px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Títulos principais */
+h1 {
+  text-align: center;
+  color: #ff5733;
+  margin-bottom: 20px;
+}
+
+/* Títulos secundários */
+h2 {
+  margin-top: 20px;
+  margin-bottom: 10px;
+  color: #ff5733;
+}
+
+/* Botões */
+button {
+  display: block;
+  width: 100%;
+  padding: 10px;
+  margin: 5px 0;
+  border: none;
+  border-radius: 5px;
+  background-color: #28a745;
+  color: white;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+button:hover {
+  background-color: #218838;
+}
+
+/* Seções do cardápio */
+#pizzas-salgadas, #pizzas-doces, #bebidas {
+  display: flex;
+  flex-direction: column;
+}
+
+/* Estilo dos botões de itens do cardápio */
+#pizzas-salgadas button,
+#pizzas-doces button,
+#bebidas button {
+  background-color: #007bff;
+  margin-bottom: 10px;
+}
+
+#pizzas-salgadas button:hover,
+#pizzas-doces button:hover,
+#bebidas button:hover {
+  background-color: #0056b3;
+}
+
+/* Estilo para mensagens de alerta */
+.alert {
+  background-color: #f44336;
+  color: white;
+  padding: 15px;
+  margin: 20px 0;
+  border-radius: 5px;
+}
